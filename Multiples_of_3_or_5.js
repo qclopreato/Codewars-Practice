@@ -10,26 +10,27 @@ myArray = [];
 let total = 0;
 
 function solution(number){
+  console.log(number);
   if (number < 0){
     return 0;
   } else if (number >= 0){
     let threes = Math.floor(number / 3);
     let fives = Math.floor(number / 5);
-    for (let i=1;i<threes+1;i++){
-      let threeCount = 3*i;
+    for (let i=0;i<threes;i++){
+      let threeCount = 3*(i);
       if (threeCount === number){
       } else {
         myArray.push(threeCount);
       }
     }
-    for (let j=1;j<fives+1;j++){
-      let fiveCount = 5*j;
-      if (fiveCount === number){
+    for (let j=0;j<fives;j++){
+      let fiveCount = 5*(j);
+      if (fiveCount === number || fiveCount / 3 === Math.round(fiveCount/3)){
       } else {
         myArray.push(fiveCount);
       }
     }
-    console.log(myArray);
+    //console.log(myArray);
     for (let k=0;k<myArray.length;k++){
       total += myArray[k];
     }
