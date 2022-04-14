@@ -8,7 +8,6 @@ var countSheep = function (num){
   } else if(num !== 0){
     for(let i=1;i<num+1;i++){
       value += (i + " sheep...");
-      console.log(value);
     }
   return value;
   }
