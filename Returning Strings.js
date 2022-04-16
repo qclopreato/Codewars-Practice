@@ -1,5 +1,6 @@
 /*Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
 
+Sample Tests:
 const chai = require("chai");
 const assert = chai.assert;
 chai.config.truncateThreshold=0;
